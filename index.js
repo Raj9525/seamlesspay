@@ -71,26 +71,27 @@ function Err500() {
 }
 
 function box() {
-  if (window.screen.width >= 1440) {
-    Err1440();
-  } else if (window.screen.width <= 1439 && window.screen.width >= 1366) {
-    Err1366();
-  } else if (window.screen.width <= 1365 && window.screen.width >= 700) {
-    Err700();
-  } else if (window.screen.width <= 599 && window.screen.width >= 500) {
-    Err500();
-  } else {
-    document.getElementById("errorBox").style.visibility = "visible";
-    document.getElementById("errorBox").style.opacity = "1";
-    document.getElementById("errorBox").style.bottom = "45px";
-    setTimeout(() => {
+  if (document.getElementById("preauth").checked) {
+    if (window.screen.width >= 1440) {
+      Err1440();
+    } else if (window.screen.width <= 1439 && window.screen.width >= 1366) {
+      Err1366();
+    } else if (window.screen.width <= 1365 && window.screen.width >= 700) {
+      Err700();
+    } else if (window.screen.width <= 599 && window.screen.width >= 500) {
+      Err500();
+    } else {
       document.getElementById("errorBox").style.visibility = "visible";
-      document.getElementById("errorBox").style.opacity = "0";
-      document.getElementById("errorBox").style.bottom = "30px";
-    }, 3000);
+      document.getElementById("errorBox").style.opacity = "1";
+      document.getElementById("errorBox").style.bottom = "45px";
+      setTimeout(() => {
+        document.getElementById("errorBox").style.visibility = "visible";
+        document.getElementById("errorBox").style.opacity = "0";
+        document.getElementById("errorBox").style.bottom = "30px";
+      }, 3000);
+    }
   }
 }
-
 //close error
 function clserr() {
   document.getElementById("errorBox").style.opacity = "0";

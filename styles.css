@@ -29,8 +29,6 @@
     position: fixed;
     top: 35px;
     height: fit-content;
-    width: fit-content;
-    max-width: 100%;
     background-color: rgb(234, 255, 239);
     border: 0.3px solid rgb(0, 188, 53);
     border-radius: 4px;
@@ -342,12 +340,12 @@
     border-radius: 4px;
     padding-left: 10px;
     padding-right: 5px;
-    display: flex;
+    display: block;
     align-items: center;
+    justify-content: center;
   }
   .seamlessinfoopt {
     position: relative;
-    width: 145px;
   }
 
   .startendlablewrap {
@@ -355,7 +353,6 @@
     display: flex;
     align-items: center;
     color: #737a8d;
-    width: 155px;
   }
 
   .startendwrap {
@@ -363,7 +360,6 @@
     color: #273a49;
     display: flex;
     align-items: center;
-    width: 155px;
   }
 
   .end {
@@ -373,12 +369,13 @@
   }
 
   .optout {
-    position: absolute;
+    position: relative;
     right: 0;
-    margin-right: 10px;
+    margin-bottom: 5px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .cancel {
@@ -448,8 +445,6 @@
     position: fixed;
     top: 43px;
     height: fit-content;
-    width: fit-content;
-    max-width: 100%;
     background-color: rgb(234, 255, 239);
     border: 0.3px solid rgb(0, 188, 53);
     border-radius: 4px;
@@ -749,12 +744,11 @@
     border-radius: 4px;
     padding-left: 10px;
     padding-right: 5px;
-    display: flex;
+    display: block;
     align-items: center;
   }
   .seamlessinfoopt {
     position: relative;
-    width: 155px;
   }
 
   .startendlablewrap {
@@ -762,7 +756,7 @@
     display: flex;
     align-items: center;
     color: #737a8d;
-    width: 155px;
+
     margin: 5px 0px;
   }
 
@@ -771,7 +765,7 @@
     color: #273a49;
     display: flex;
     align-items: center;
-    width: 155px;
+
     margin: 5px 0px;
   }
 
@@ -782,12 +776,12 @@
   }
 
   .optout {
-    position: absolute;
+    position: relative;
     right: 0;
-    margin-right: 10px;
-
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .cancel {
@@ -857,8 +851,6 @@
     position: fixed;
     top: 43px;
     height: fit-content;
-    width: fit-content;
-    max-width: 100%;
     background-color: rgb(234, 255, 239);
     border: 0.3px solid rgb(0, 188, 53);
     border-radius: 4px;
@@ -901,7 +893,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 326px;
+    width: 85%;
     height: 35px;
   }
 
@@ -1003,7 +995,7 @@
   }
 
   .otpins {
-    width: 326px;
+    width: 85%;
     line-height: 150%;
     margin: 0;
   }
@@ -1121,18 +1113,18 @@
     position: relative;
     float: left;
     font-size: 10.5px;
-    width: 65%;
+    width: 55%;
     background: #f4f7ff;
     border: 0.5px solid #d0e1f9;
     border-radius: 4px;
     padding-left: 10px;
-    padding-right: 5px;
-    display: flex;
+    padding-right: 10px;
+    display: block;
     align-items: center;
+    justify-content: center;
   }
   .seamlessinfoopt {
     position: relative;
-    width: 155px;
   }
 
   .startendlablewrap {
@@ -1140,7 +1132,7 @@
     display: flex;
     align-items: center;
     color: #737a8d;
-    width: 155px;
+
     margin: 5px 0px;
   }
 
@@ -1149,7 +1141,7 @@
     color: #273a49;
     display: flex;
     align-items: center;
-    width: 155px;
+
     margin: 5px 0px;
   }
 
@@ -1160,9 +1152,10 @@
   }
 
   .optout {
-    position: absolute;
+    position: relative;
     right: 0;
-    margin-right: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
   }
@@ -1230,8 +1223,6 @@
     position: fixed;
     top: 50px;
     height: fit-content;
-    width: fit-content;
-    max-width: 100%;
     background-color: rgb(234, 255, 239);
     border: 0.3px solid rgb(0, 188, 53);
     border-radius: 4px;
@@ -1273,7 +1264,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 398px;
+    width: 80%;
     height: 43px;
   }
 
@@ -1381,7 +1372,7 @@
   }
 
   .otpins {
-    width: 398px;
+    width: 80%;
     line-height: 150%;
   }
 
@@ -1404,7 +1395,7 @@
   }
 
   #user_details {
-    width: 283px;
+    width: 65%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -1422,7 +1413,7 @@
   }
 
   #user_details > table {
-    width: 259px;
+    width: 90%;
     padding: 0px;
     margin: 0px;
   }
@@ -1470,11 +1461,10 @@
 
   button {
     background-color: #fff;
-    width: 67px;
     height: 16px;
     font-weight: medium;
     line-height: 0;
-    font-size: 8px;
+    font-size: 11px;
     -webkit-appearance: none;
     color: #2a1563;
     border-radius: 25px;
@@ -1498,7 +1488,7 @@
     position: relative;
     float: left;
     font-size: 10px;
-    width: 240px;
+    width: 65%;
     background: #f4f7ff;
     border: 0.5px solid #d0e1f9;
     border-radius: 4px;
@@ -1561,7 +1551,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 8px;
+    font-size: 10px;
     color: #273a49;
   }
 
@@ -1609,8 +1599,6 @@
     position: fixed;
     top: 43px;
     height: fit-content;
-    width: fit-content;
-    max-width: 100%;
     background-color: rgb(234, 255, 239);
     border: 0.3px solid rgb(0, 188, 53);
     border-radius: 4px;
@@ -1753,7 +1741,7 @@
     color: #273a49;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
-    font-size: 10px;
+    font-size: 13px;
     width: 100%;
     float: left;
     height: auto;
@@ -1784,7 +1772,7 @@
   }
 
   #user_details {
-    width: 348px;
+    width: 55%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -1818,20 +1806,20 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.4px;
+    font-size: 11px;
     line-height: 1;
     text-align: left;
-    width: 86px;
+    width: 100px;
     color: #17222b;
     vertical-align: top;
   }
 
   .user_fieldValue {
-    padding-left: 32px;
+    padding-left: 15px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.4px;
+    font-size: 10.5px;
     line-height: 1;
     text-align: left;
 
@@ -1851,11 +1839,11 @@
 
   button {
     background-color: #fff;
-    width: 77px;
+
     height: 18px;
     font-weight: medium;
     line-height: 0;
-    font-size: 8px;
+    font-size: 11px;
     -webkit-appearance: none;
     color: #2a1563;
     border-radius: 25px;
@@ -1879,7 +1867,7 @@
     position: relative;
     float: left;
     font-size: 10px;
-    width: 240px;
+    width: 55%;
     background: #f4f7ff;
     border: 0.5px solid #d0e1f9;
     border-radius: 4px;
@@ -1929,7 +1917,7 @@
     position: relative;
     width: 100%;
     float: left;
-    font-size: 10px;
+    font-size: 11px;
     display: flex;
     justify-content: center;
     margin-top: 25px;
@@ -1942,7 +1930,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 9px;
+    font-size: 10.5px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -1991,8 +1979,6 @@
     position: fixed;
     top: 58px;
     height: fit-content;
-    width: fit-content;
-    max-width: 100%;
     background-color: rgb(234, 255, 239);
     border: 0.3px solid rgb(0, 188, 53);
     border-radius: 4px;
@@ -2034,7 +2020,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 45%;
+    width: 65%;
     height: 5%;
   }
 
@@ -2133,7 +2119,7 @@
   }
 
   .otpins {
-    width: 45%;
+    width: 65%;
     line-height: 180%;
     margin: 5px 0px 5px 0px;
   }
@@ -2148,7 +2134,7 @@
   }
 
   #user_details {
-    width: 40%;
+    width: 55%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -2250,7 +2236,7 @@
     position: relative;
     float: left;
     font-size: 12.5px;
-    width: 38%;
+    width: 55%;
     background: #f4f7ff;
     border: 0.5px solid #d0e1f9;
     border-radius: 4px;
@@ -2360,8 +2346,6 @@
     position: fixed;
     bottom: 33px;
     height: fit-content;
-    width: fit-content;
-    max-width: 100%;
     background-color: rgb(234, 255, 239);
     border: 0.3px solid rgb(0, 188, 53);
     border-radius: 4px;
@@ -2404,7 +2388,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 742px;
+    width: 55%;
     height: 55px;
   }
 
@@ -2506,7 +2490,7 @@
   }
 
   .otpins {
-    width: 742px;
+    width: 55%;
     line-height: 150%;
     margin: 5px 0px 5px 0px;
   }
@@ -2521,7 +2505,7 @@
   }
 
   #user_details {
-    width: 490px;
+    width: 40%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -2538,7 +2522,7 @@
   }
 
   #user_details > table {
-    width: 430px;
+    width: 90%;
     padding: 0px;
     margin: 0px;
   }
@@ -2622,7 +2606,7 @@
     position: relative;
     float: left;
     font-size: 12px;
-    width: 340px;
+    width: 36%;
     background: #f4f7ff;
     border: 0.5px solid #d0e1f9;
     border-radius: 4px;
@@ -2733,8 +2717,6 @@
     position: fixed;
     bottom: 33px;
     height: fit-content;
-    width: fit-content;
-    max-width: 100%;
     background-color: rgb(234, 255, 239);
     border: 0.3px solid rgb(0, 188, 53);
     border-radius: 4px;
@@ -2782,7 +2764,7 @@
     display: flex;
     align-items: center;
     float: left;
-    width: 799px;
+    width: 45%;
     height: 75px;
   }
 
@@ -2896,7 +2878,7 @@
   }
 
   .otpins {
-    width: 799px;
+    width: 45%;
     line-height: 150%;
     margin: 5px 0px 5px 0px;
   }
@@ -2911,7 +2893,7 @@
   }
 
   #user_details {
-    width: 510px;
+    width: 45%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -2928,7 +2910,7 @@
   }
 
   #user_details > table {
-    width: 450px;
+    width: 90%;
     padding: 0px;
     margin: 0px;
   }
@@ -3013,7 +2995,7 @@
     position: relative;
     float: left;
     font-size: 13px;
-    width: 380px;
+    width: 34%;
     background: #f4f7ff;
     border: 0.5px solid #d0e1f9;
     border-radius: 4px;

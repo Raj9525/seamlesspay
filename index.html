@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" media="screen" href="styles.css">
+  <style>
+    .config {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  </style>
+</head>
+
+<body id="body" style="visibility: visible;">
+  <div id="container">
+    <div id="header">
+      <div class="logowrapper">
+        <div class="bankholder">
+          <img src="img/RBL Logo (white).png" id="bank_logo" />
+        </div>
+        <div class="visaholder">
+          <img src="img/Verified By Visa.svg" id="visa_logo" style="visibility: visible;" />
+        </div>
+      </div>
+    </div>
+    <div class="errorBoxcontainer">
+      <div class="errorBox" id="errorBox" style="visibility:visible">
+
+        <p class="invalidotp" id="msginvalid">Successfully opted out from Preauthentication</p>
+
+      </div>
+    </div>
+
+    <div class="contentwrapper" style="visibility: visible;">
+      <div id="otpinfo">
+
+        <p class="otpins" id="otpins">Processing payment in Seamless flow, Please wait. Don't refresh. This information
+          is not shared
+          with the merchant.</p>
+      </div>
+
+      <div class="wrapperUser">
+        <div id="user_details">
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <p class="user_field">Merchant Name</p>
+              </td>
+              <td>
+                <p class=" user_fieldValue" id="merchant_name"> FSS Shopping Private Limited</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="user_field">Total Charges</p>
+              </td>
+              <td>
+                <p class=" user_fieldValue" id="charges"> Rs.6000.00</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="user_field">Date</p>
+              </td>
+              <td>
+                <p class=" user_fieldValue" id="date"> November 08, 2020</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="user_field">Card Number</p>
+              </td>
+              <td>
+                <p class=" user_fieldValue" id="card_number"> XXXX XXXX XXXX 0001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="user_field">Personal Message</p>
+              </td>
+              <td>
+                <p class=" user_fieldValue" id="per_message"> Good bank to bank with</p>
+              </td>
+            </tr>
+          </table>
+
+
+        </div>
+      </div>
+
+
+
+      <div class="wrapperBar">
+        <div class="tabbar" id="tabbar">
+
+          <button class="tabbtn" id="atmpin_tab"><span>Seamless Flow</span></button>
+
+        </div>
+      </div>
+
+      <div class="seamlessinfowrap">
+        <div class="seamlessinfo">
+          <div class="seamlessinfoopt">
+            <div class="startendlablewrap">
+
+              <p class="startdate">Start date</p>
+              <div class="end">
+                <p class="enddate">End date</p>
+              </div>
+            </div>
+            <div class="startendwrap">
+
+              <p class="startdate">02-05-2021</p>
+              <div class="end">
+                <p class="enddate">02-05-2021</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="optout">
+            <input type="checkbox" id="preauth" class="preauth" name="optin" value="opt" onclick="box();" checked>
+            <label class="labelpreauth" for="preauth"> Opt out</label><br>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="seamlessinfowrap" style="display: none;">
+        <div class="seamlessinfo">
+          <div class="seamlessinfoopt">
+            <div class="startendlablewrap">
+
+              <p class="startdate">Remaining Transactions</p>
+
+            </div>
+            <div class="startendwrap">
+
+              <p class="startdate">08 / 10</p>
+
+            </div>
+
+          </div>
+          <div class="optout">
+            <input type="checkbox" id="preauth" class="preauth" name="optin" value="opt" onclick="box();">
+            <label class="labelpreauth" for="preauth"> Opt out</label><br>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      </form>
+      <div class=" cancel" id="cancel">
+        <a href="">Cancel Transaction</a>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div id="footer" class="footer fixed">
+    <div class="expirewrapper" id="expirewrapper">
+      <div class="expireinfo" id="expireinfo">
+        <p>Page will expire in <span id="minutes2"></span>:<span id="seconds2"></span> Seconds</p>
+      </div>
+    </div>
+    <div class="logowrapper">
+      <div class="pci">
+        <img src="img/pci_dss.png" id="pci_logo" />
+      </div>
+      <img src="img/yap.png" id="yap_logo" />
+      <div class="partnerholder">
+        <img src="img/SBEIGHT.svg" class="partnerlogo">
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!--<script src="styles.js"></script>-->
+  <script src="index.js"></script>
+</body>
+
+</html>
